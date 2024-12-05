@@ -1,0 +1,31 @@
+.now-image img{
+    height: 70px;
+    margin-left: 20px;
+    }
+    .now {
+      display: flex;
+      align-items: center;
+      
+    }
+    .last{
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+    .playbar{
+      display: flex;
+      justify-content: space-between;
+    }
+    .playoption img{
+      width: 500px;
+    }
+    .lastimage img{
+      width: 300px;
+    } 
+    .green{
+      height: 30px;
+      background-color: green;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 1550px;
+      padding-top: 6px;
+    }
