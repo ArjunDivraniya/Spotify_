@@ -23,14 +23,15 @@ import imag18 from '../assets/User.png'
         { title:'Dance/ Elecronics Mix',url:imag11 },
     ]
     const artist=[
-        {image:imag12,name:"Weekly Motivatio...",subname:"Ren ina Scott"},
-        {image:imag13,name:"Weekly Motivatio...",subname:"Ren ina Scott"},
-        {image:imag14,name:"Weekly Motivatio...",subname:"Ren ina Scott"},
-        {image:imag15,name:"Weekly Motivatio...",subname:"Ren ina Scott"},
+        {image:imag12,name:"Weekly Motivatio...",subname:"Ren ina Scott",id:1},
+        {image:imag13,name:"MEDITATION SELF",subname:"Ren ina Scott",id:2},
+        {image:imag14,name:"Words beyond act...",subname:"Ren ina Scott",id:3},
+        {image:imag15,name:"The Alexa Show",subname:"Ren ina Scott",id:4},
 
-        {image:imag16,name:"Weekly Motivatio...",subname:"Ren ina Scott"},
-        {image:imag17,name:"Weekly Motivatio...",subname:"Ren ina Scott"}
+        {image:imag16,name:"The Stories of Ma...",subname:"Ren ina Scott",id:5},
+        {image:imag17,name:"Motivation Daily b...",subname:"Ren ina Scott",id:6}
     ]
+    const even=artist.filter(i=>i.id%2==0);
     return(
 <>
 <div className='first'>
@@ -54,7 +55,7 @@ import imag18 from '../assets/User.png'
    
 <b className="text">Shows you might like</b>
 <div className="artist">
-    {artist.map((i) => (
+    {even.map(i => (
 
         <div className="artistname">
         <div className="artistimage"><img src= {i.image} alt=""/></div>
